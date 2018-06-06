@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+    <ImageView
+        android:id="@+id/imageViewCell"
+        android:layout_width="268dp"
+        android:layout_height="68dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/level_list_shop_cell"/>
+    <ImageView
+        android:id="@+id/imageViewPriceFrame"
+        android:layout_width="85dp"
+        android:layout_height="37dp"
+        android:layout_alignRight="@id/imageViewCell"
+        android:layout_alignTop="@id/imageViewCell"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15.5dp"
+        android:src="@drawable/shop_price_frame"/>
+    <app.view.OutlineTextView
+        android:id="@+id/outlineTextViewPrice"
+        android:layout_width="60dp"
+        android:layout_height="@dimen/white_number_samll_height"
+        android:layout_alignTop="@id/imageViewPriceFrame"
+        android:layout_alignRight="@id/imageViewPriceFrame"
+        android:layout_marginTop="6.5dp"
+        android:layout_marginRight="4dp"
+        android:textSize="@dimen/white_number_item_dialog_text"
+        android:textColor="@color/white"/>
+</RelativeLayout>

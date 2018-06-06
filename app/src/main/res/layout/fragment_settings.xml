@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/match_parent_width"
+    android:layout_height="@dimen/match_parent_height"
+    android:background="@color/white">
+    <!--<ImageView
+        android:id="@+id/imageViewTitleBar"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:src="@drawable/login_title_bar"/>
+    <ImageView
+        android:id="@+id/imageViewTitle"
+        android:layout_width="115dp"
+        android:layout_height="21dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/imageViewTitleBar"
+        android:layout_marginTop="22.5dp"
+        android:src="@drawable/title_settings"/>-->
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="@dimen/match_parent_width"
+        android:layout_height="80dp"
+        android:background="@drawable/login_title_bar">
+
+        <!--ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="48dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/button_back_arrow" /-->
+
+        <ImageView
+            android:id="@+id/imageViewTitle"
+            android:layout_width="115dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="24dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="center"
+            android:src="@drawable/title_settings" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/layoutAd"
+        android:layout_width="@dimen/ad_width"
+        android:layout_height="@dimen/ad_height"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layoutAd"
+        android:paddingTop="16dp"
+        android:layout_below="@id/space"/>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+</RelativeLayout>

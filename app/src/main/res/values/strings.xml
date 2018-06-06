@@ -1,0 +1,167 @@
+<resources>
+    <string name="app_name">ゴミ箱にPOI</string>
+
+    <string name="confirm">確認</string>
+
+    <!-- FragmentName -->
+    <string name="fragment_name_tutorial">TutorialFragment</string>
+    <string name="fragment_name_login">LoginFragment</string>
+    <string name="fragment_name_logintop">LoginTopFragment</string>
+    <string name="fragment_name_regist">RegistFragment</string>
+    <string name="fragment_name_top">TopFragment</string>
+    <string name="fragment_name_exchange">ExchangeFragment</string>
+    <string name="fragment_name_game">GameFragment</string>
+    <string name="fragment_name_help">HelpFragment</string>
+    <string name="fragment_name_ranking">RankingFragment</string>
+    <string name="fragment_name_settings">SettingsFragment</string>
+    <string name="fragment_name_shop">ShopFragment</string>
+    <string name="fragment_name_news">NewsFragment</string>
+    <string name="fragment_name_picture_book">PictureBookFragment</string>
+    <string name="fragment_name_friend_list">FriendListFragment</string>
+    <string name="fragment_name_friend_list_rank">FriendListRankFragment</string>
+    <string name="fragment_name_info">InfoFragment</string>
+
+    <!-- DialogName -->
+    <string name="dialog_name_error">ErrorDialog</string>
+    <string name="dialog_name_input_shortage">ShortageDialog</string>
+    <string name="dialog_name_news">NewsDialog</string>
+    <string name="dialog_name_notice1">Notice1Dialog</string>
+    <string name="dialog_name_notice2">Notice2Dialog</string>
+    <string name="dialog_name_notice3">Notice3Dialog</string>
+    <string name="dialog_name_buy_gem">BuyGemDialog</string>
+    <string name="dialog_name_picture_book">PictureBookDialog</string>
+    <string name="dialog_name_item">ItemDialog</string>
+    <string name="dialog_name_synthesis">SynthesisDialog</string>
+    <string name="dialog_name_synthesis_success">SynthesisSuccessDialog</string>
+    <string name="dialog_name_picture_poi">PicturePoiDialog</string>
+    <string name="dialog_name_scroll">ScrollDialog</string>
+    <string name="dialog_name_synthesis_shortage">SynthesisShortageDialog</string>
+    <string name="dialog_name_exist_same_nickname_error">ExistSameNicknameErrorDialog</string>
+    <string name="dialog_name_invalid_password_error">InvalidPasswordErrorDialog</string>
+    <string name="dialog_name_login_guest_confirm">LoginGuestConfirmDialog</string>
+    <string name="dialog_name_guest_limited_func_friend">GuestLimitedFuncFriendDialog</string>
+
+    <string name="dialog_name_invite_friend">InviteFriendDialog</string>
+    <string name="dialog_name_give_friend">GiveFriendDialog</string>
+    <string name="dialog_name_gimme_friend">GimmeFriendDialog</string>
+    <string name="dialog_name_friend_message">FriendMessageDialog</string>
+    <string name="dialog_name_delete_friend">DeleteFriendDialog</string>
+
+    <string name="dialog_name_searchbycode_invalid">SearchBuyCode_InvalidDialog</string>
+    <string name="dialog_name_codeuse_notmatch">CodeUse_NotMatchDialog</string>
+    <string name="dialog_name_codeuse_isself">CodeUse_IsSelfDialog</string>
+    <string name="dialog_name_codeuse_alreadyfriend">CodeUse_AlreadyFriendDialog</string>
+    <string name="dialog_name_codeuse_reachedupperlimitself">CodeUse_ReachedUpperLimitSelfDialog</string>
+    <string name="dialog_name_codeuse_reachedupperlimitfriend">CodeUse_ReachedUpperLimitFriendDialog</string>
+    <string name="dialog_name_present_exceedupperlimitself">Present_ExceedUpperLimitSelfDialog</string>
+    <string name="dialog_name_present_exceedupperlimitfriend">Present_ExceedUpperLimitFriendDialog</string>
+    <string name="dialog_name_presents_exceedupperlimitself">Presents_ExceedUpperLimitSelfDialog</string>
+    <string name="dialog_name_presents_exceedupperlimitfriend">Presents_ExceedUpperLimitFriendDialog</string>
+    <string name="dialog_name_presentsuse_expiration">PresentsUse_ExpirationDialog</string>
+    <string name="dialog_name_presentsuse_noeffect">PresentsUse_NoEffectDialog</string>
+    <string name="dialog_name_presentrequest_exceedupperlimit">PresentRequest_ExceedUpperLimitDialog</string>
+    <string name="dialog_name_presentrequests_exceedupperlimit">PresentRequests_ExceedUpperLimitDialog</string>
+
+    <!-- LoginTopText -->
+    <string name="login_user">会員ログイン</string>
+    <string name="login_guest">とりあえず遊ぶ</string>
+
+    <!-- TutorialText -->
+    <string name="tutorial_0"></string>
+    <string name="tutorial_1">ゴミ箱にPOIをダウンロード\nしてくれてありがとう。\n\nこのアプリは、部屋を掃除して\nポイントを貯めていくゲームだよ。</string>
+    <string name="tutorial_2">ゴミをゴミ箱に向けて\nスワイプするとポイントゲット！\nゴミによって\n獲得ポイントが違ったり\nレベルアップすると\n新しいゴミが登場するよ。\n\n秘伝書を使って集めたゴミを合成すると\nレアなゴミが出てくるかも。</string>
+    <string name="tutorial_3">ゴミ以外にも携帯内の不要な写真を\n[写真ポイ]で消去すると\n宝石をゲットできるよ。\n\nでも大切な写真はポイしないでね！</string>
+    <string name="tutorial_4">貯まったポイントは\n応募券に交換\nすることができるよ。\n\n欲しい商品に応募しよう！</string>
+    <string name="tutorial_5">宝石はアイテムに\n交換することができるよ。\nアイテムを使って、\nもっとポイントを貯めよう！</string>
+    <string name="tutorial_6">詳しいルールはヘルプを見てね。\n\nさあ、まずはゲームを\n始めてみよう！！</string>
+
+    <!-- RegistText -->
+    <string name="regist_nickname">ニックネーム（ゲーム内ランキング表示名）</string>
+    <string name="regist_loginid">お好きなログインID</string>
+    <string name="regist_password">お好きなパスワード</string>
+    <string name="regist_limit_1">1〜20文字（絵文字以外）</string>
+    <string name="regist_limit_2">半角英数字6〜20文字</string>
+    <string name="regist_message_1">自分が覚えやすいIDと\nパスワードを登録してね</string>
+    <string name="regist_message_error_exist_same_name">ニックネームは既に使用されています。</string>
+    <string name="regist_message_error_invalid_password">パスワードは6〜20文字内で入力してください。</string>
+
+    <!-- Login Text -->
+    <string name="loginid">ログインID</string>
+    <string name="password">パスワード</string>
+    <string name="contact">お問い合わせ</string>
+    <string name="login_message_1">パスワードがわからない時は\n問い合わせをしてね</string>
+
+    <!-- GuestLoginText -->
+    <string name="login_guest_message_confirm">＊機種変更などで\nデータの引き継ぎが\n必要な場合は、\n事前に会員登録を\n完了してください。</string>
+
+    <!-- Facebook SDK -->
+    <string name="facebook_app_id">2048748918682751</string>
+
+    <!-- TopText -->
+    <string name="guest_limited_func_friend_message">ゲストユーザーは、\nフレンド機能を\n使用できません。\n\n会員登録をしますか？</string>
+
+    <!-- FriendList -->
+    <string name="friend_list_code_title">あなたのフレンドコード</string>
+    <string name="friend_list_count_format">%1$d/%2$d人</string>
+    <string name="friend_invite">招待する</string>
+    <string name="friend_total_point">総獲得</string>
+    <string name="friend_invite_text">ゴミ箱にPOIに招待</string>
+    <string name="friend_level">Lv.%d</string>
+
+    <!-- FriendListRank -->
+    <string name="friend_list_rank_title">週間ランキング</string> <!-- Weekly Ranking -->
+    <string name="friend_list_rank_confirmed_ranking">確定ランキング</string> <!-- Confirmed Ranking (weekly) -->
+    <string name="friend_list_rank_current_ranking">現在のランキング</string> <!-- Current Ranking (hourly) -->
+    <string name="friend_list_rank_rank">%1$2d位</string>
+    <string name="friend_list_rank_points">%1$dポイント</string>
+    <string name="friend_list_rank_after_name">%1$2s様</string>
+    <string name="friend_list_rank_date_time">%1$2s現在（1時間ごとに更新）</string>
+
+    <!-- FriendMessage -->
+    <string name="friend_message_title">メッセージ</string>
+    <string name="friend_message_list_empty">メッセージはありません</string>
+    <string name="friend_message_alert">※メッセージは30日間保存され、\n期間を超えると削除されます</string>
+    <string name="friend_message_install">インストール</string>
+    <string name="friend_message_accept">受け取る</string>
+    <string name="friend_message">フレンド数%1$d人達成！\n宝石%2$d個プレゼント！</string>
+    <string name="friend_chara_bonus_message">SPごみキャラが解放されました。図鑑のSPゴミを確認してみよう</string>
+    <string name="friend_stage_bonus_message">庭のカギを入手しました。アイテムからカギを使って庭ステージを解放してみよう</string>
+    <string name="friend_message_bonus_ticket">フレンド数%1$d人達成！\nプレミアム景品参加券がプレゼントされました</string>
+
+    <!-- FriendAdd -->
+    <string name="friend_add_description">フレンドになりたいユーザーの\nフレンドコードを入力してください</string>
+    <string name="friend_add_friend">フレンド追加</string>
+    <string name="friend_add_no_matching_user">一致するユーザーがいません</string>
+
+    <!-- GimmeList -->
+    <string name="gimme_list_title">ゴミ箱を空にするアイテムを\nフレンドにおねだりしよう！</string>
+    <string name="gimme_list_empty">メッセージはありません</string>
+
+    <!-- FriendErrorDialog -->
+    <string name="dialog_message_searchbycode_invalid">無効なフレンドコード（一致するユーザが存在しない）</string>
+    <string name="dialog_message_codeuse_notmatch">無効なフレンドコード（一致するユーザが存在しない）</string>
+    <string name="dialog_message_codeuse_isself">無効なフレンドコード（アクセスユーザのフレンドコードが指定された）</string>
+    <string name="dialog_message_codeuse_alreadyfriend">選択されたユーザーはすでにフレンドです。</string>
+    <string name="dialog_message_codeuse_reachedupperlimitself">アクセスユーザのフレンド数が上限に達している</string>
+    <string name="dialog_message_codeuse_reachedupperlimitfriend">相手ユーザのフレンド数が上限に達している</string>
+    <string name="dialog_message_present_exceedupperlimitself">回数制限により送付できない（アクセスユーザの送付回数制限）</string>
+    <string name="dialog_message_present_exceedupperlimitfriend">回数制限により送付できない（同一ユーザへの送付回数制限）</string>
+    <string name="dialog_message_presents_exceedupperlimitself">回数制限により送付できない（アクセスユーザの送付回数制限）</string>
+    <string name="dialog_message_presents_exceedupperlimitfriend">回数制限により送付できない（同一ユーザへの送付回数制限）</string>
+    <string name="dialog_message_presentsuse_expiration">期限切れのため受け取れない</string>
+    <string name="dialog_message_presentsuse_noeffect">プレゼント使用の効果が無いため、現在使用できない</string>
+    <string name="dialog_message_presentrequest_exceedupperlimit">回数制限によりおねだりできない</string>
+    <string name="dialog_message_presentrequests_exceedupperlimit">回数制限によりおねだりできない</string>
+
+    <!-- QR code -->
+    <string name="qr_code_description">相手がQRコードリーダーでスキャンすると、あなたを友達に追加できます。</string>
+    <string name="dialog_message_qr_code_invalid">フレンドのQRコードではありません。</string>
+    <string name="failed_to_start_camera">カメラの起動に失敗しました。</string>
+    <!-- Item購入 -->
+    <string name="item_buy_no_key_error">関連する場所のキーを所持していないため、購入できません</string>
+
+    <!-- Item使用 -->
+    <string name="item_use_daily_count_reached_error">1日1回までの使用制限のため、使用できません。</string>
+
+    <string name="save_data_message">データ同期中...</string>
+</resources>

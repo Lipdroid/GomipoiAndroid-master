@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dialog_marginTop"
+        android:minHeight="@dimen/dialog_min_height"
+        android:padding="@dimen/dialog_padding"
+        android:background="@drawable/dialog_background">
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/dialog_text"/>
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/buttonRight"
+            android:layout_width="95dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp" />
+        <Button
+            android:id="@+id/buttonLeft"
+            android:layout_width="95dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</RelativeLayout>

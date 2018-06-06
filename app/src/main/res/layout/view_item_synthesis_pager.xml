@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/layoutItem1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/selector_panel_background"
+        android:src="@drawable/panel_paper" />
+
+    <ImageButton
+        android:id="@+id/layoutItem2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@+id/layoutItem1"
+        android:scaleType="fitCenter"
+        android:background="@drawable/selector_panel_background"
+        android:src="@drawable/panel_paper" />
+
+    <ImageButton
+        android:id="@+id/layoutItem3"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginRight="1dp"
+        android:layout_toLeftOf="@+id/layoutItem4"
+        android:scaleType="fitCenter"
+        android:background="@drawable/selector_panel_background"
+        android:src="@drawable/panel_paper" />
+
+    <ImageButton
+        android:id="@+id/layoutItem4"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitCenter"
+        android:background="@drawable/selector_panel_background"
+        android:src="@drawable/panel_paper" />
+
+    <ImageButton
+        android:id="@+id/layoutItem5"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitCenter"
+        android:background="@drawable/selector_panel_background"
+        android:src="@drawable/panel_paper" />
+
+    <ImageButton
+        android:id="@+id/layoutItem6"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@+id/layoutItem5"
+        android:scaleType="fitCenter"
+        android:background="@drawable/selector_panel_background"
+        android:src="@drawable/panel_paper" />
+
+    <ImageButton
+        android:id="@+id/layoutItem7"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="1dp"
+        android:layout_toLeftOf="@+id/layoutItem8"
+        android:scaleType="fitCenter"
+        android:background="@drawable/selector_panel_background"
+        android:src="@drawable/panel_paper" />
+
+    <ImageButton
+        android:id="@+id/layoutItem8"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitCenter"
+        android:background="@drawable/selector_panel_background"
+        android:src="@drawable/panel_paper" />
+
+    <ImageButton
+        android:id="@+id/layoutItem9"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitCenter"
+        android:background="@drawable/selector_panel_background"
+        android:src="@drawable/panel_paper" />
+
+    <ImageButton
+        android:id="@+id/layoutItem10"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@+id/layoutItem9"
+        android:scaleType="fitCenter"
+        android:background="@drawable/selector_panel_background"
+        android:src="@drawable/panel_paper" />
+
+    <ImageButton
+        android:id="@+id/layoutItem11"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="1dp"
+        android:layout_toLeftOf="@+id/layoutItem12"
+        android:scaleType="fitCenter"
+        android:background="@drawable/selector_panel_background"
+        android:src="@drawable/panel_paper" />
+
+    <ImageButton
+        android:id="@+id/layoutItem12"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitCenter"
+        android:background="@drawable/selector_panel_background"
+        android:src="@drawable/panel_paper" />
+
+</RelativeLayout>

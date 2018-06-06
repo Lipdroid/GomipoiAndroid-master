@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tv_rank_no"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:text="@string/friend_list_rank_rank"
+        android:gravity="end"/>
+
+    <TextView
+        android:id="@+id/tv_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tv_rank_no"
+        android:layout_toRightOf="@+id/tv_rank_no"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:text="@string/friend_list_rank_points"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/tv_extra_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tv_points"
+        android:layout_toRightOf="@+id/tv_points"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tv_extra_string"
+        android:layout_toRightOf="@+id/tv_extra_string"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:text="@string/friend_list_rank_after_name"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp" />
+</RelativeLayout>
+<!--LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/tv_rank_no"
+        android:layout_width="0dp"
+        android:layout_weight="0.10"
+        android:layout_height="wrap_content"
+        android:gravity="end|right"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:text="@string/friend_list_rank_rank" />
+
+    <TextView
+        android:id="@+id/tv_points"
+        android:layout_width="0dp"
+        android:layout_weight="0.45"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:text="@string/friend_list_rank_points"
+        android:paddingLeft="4dp"
+        android:paddingStart="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_weight="0.45"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:text="@string/friend_list_rank_after_name"
+        android:paddingLeft="4dp"
+        android:paddingStart="4dp"/>
+</LinearLayout-->

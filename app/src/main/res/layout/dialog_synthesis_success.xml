@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="@dimen/match_parent_width"
+        android:layout_height="@dimen/match_parent_height"
+        android:layout_gravity="center">
+
+        <!-- 背景 -->
+        <ImageView
+            android:id="@+id/imageViewBackground"
+            android:layout_width="234dp"
+            android:layout_height="314dp"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/detail_paper" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="60dp">
+
+            <!-- 合成成功 -->
+            <ImageView
+                android:layout_width="320dp"
+                android:layout_height="55dp"
+                android:src="@drawable/title_synthesis_success"
+                android:layout_centerInParent="true"/>
+
+            <!-- キラキラ大 -->
+            <ImageView
+                android:id="@+id/imageViewKiraKira1"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/kirakira_large"/>
+
+            <ImageView
+                android:id="@+id/imageViewKiraKira2"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="90dp"
+                android:src="@drawable/kirakira_large"/>
+
+            <ImageView
+                android:id="@+id/imageViewKiraKira3"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/kirakira_large"/>
+
+            <ImageView
+                android:id="@+id/imageViewKiraKira4"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="100dp"
+                android:src="@drawable/kirakira_large"/>
+
+            <!-- キラキラ小 -->
+            <ImageView
+                android:id="@+id/imageViewKiraKira5"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="120dp"
+                android:src="@drawable/kirakira_small"
+                />
+
+            <ImageView
+                android:id="@+id/imageViewKiraKira6"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/kirakira_small"
+                />
+
+            <ImageView
+                android:id="@+id/imageViewKiraKira7"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="60dp"
+                android:src="@drawable/kirakira_small"
+                />
+
+        </RelativeLayout>
+
+        <app.view.OutlineTextView
+            android:id="@+id/outlineTextViewPoint"
+            android:layout_width="94dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="116dp"
+            android:layout_marginTop="254dp"
+            android:textSize="@dimen/white_number_small_text"
+            android:textColor="@color/white" />
+
+        <!-- もどる -->
+        <ImageButton
+            android:id="@+id/imageButtonSynthesisBack"
+            android:layout_width="95dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/imageViewBackground"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/synthesis_button_back"
+            android:background="@null"/>
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="@dimen/match_parent_width"
+        android:layout_height="@dimen/match_parent_height"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/imageViewTitle"
+            android:layout_width="85dp"
+            android:layout_height="26dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/text_picture_poi"/>
+        <Button
+            android:id="@+id/buttonSelect"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_select"/>
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonSelect"
+            android:layout_margin="10dp"
+            android:gravity="right"
+            android:textSize="@dimen/picture_poi_message"
+            android:textColor="@color/white" />
+        <GridView
+            android:id="@+id/gridViewPoi"
+            android:layout_width="@dimen/match_parent_width"
+            android:layout_height="match_parent"
+            android:layout_below="@id/textViewMessage"
+            android:numColumns="4"
+            android:background="@color/black"/>
+    </RelativeLayout>
+</FrameLayout>

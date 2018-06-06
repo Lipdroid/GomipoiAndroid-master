@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/match_parent_width"
+    android:layout_height="@dimen/match_parent_height"
+    android:background="@color/white">
+    <!--<android.opengl.GLSurfaceView-->
+    <lib.opengl.GLSurfaceViewBase
+        android:id="@+id/glView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/layoutCaptureTarget"
+        android:layout_width="@dimen/match_parent_width"
+        android:layout_height="@dimen/match_parent_height">
+
+        <FrameLayout
+            android:id="@+id/layoutPointEffect"
+            android:layout_width="70dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="40dp">
+            <app.view.OutlineTextView
+                android:id="@+id/outlineTextViewPoint3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center_horizontal|bottom"
+                android:textSize="17sp"
+                android:textColor="#ffd400"
+                android:visibility="gone"/>
+            <app.view.OutlineTextView
+                android:id="@+id/outlineTextViewPoint2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center_horizontal|bottom"
+                android:textSize="17sp"
+                android:textColor="#ffd400"
+                android:visibility="gone"/>
+            <app.view.OutlineTextView
+                android:id="@+id/outlineTextViewPoint1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center_horizontal|bottom"
+                android:textSize="17sp"
+                android:textColor="#ffd400"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <!-- Header -->
+        <FrameLayout
+            android:id="@+id/layoutHeader"
+            android:layout_width="@dimen/match_parent_width"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:id="@+id/layoutPoint"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="16dp"
+                android:background="@drawable/point_frame">
+                <include
+                    layout="@layout/layout_point" />
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="23dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_point"/>
+            </FrameLayout>
+
+            <ImageButton
+                android:id="@+id/buttonMenu"
+                android:layout_width="42dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="19dp"
+                android:background="@null"
+                android:src="@drawable/button_menu" />
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/layoutSns"-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="28dp"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_marginTop="28dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal">-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/imageViewSnsLine"-->
+                    <!--android:layout_width="21dp"-->
+                    <!--android:layout_height="21dp"-->
+                    <!--android:layout_marginLeft="2dp"-->
+                    <!--android:src="@drawable/top_sns_line"/>-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/imageViewSnsFacebook"-->
+                    <!--android:layout_width="21dp"-->
+                    <!--android:layout_height="21dp"-->
+                    <!--android:layout_marginLeft="2dp"-->
+                    <!--android:src="@drawable/top_sns_facebook"/>-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/imageViewSnsTwitter"-->
+                    <!--android:layout_width="21dp"-->
+                    <!--android:layout_height="21dp"-->
+                    <!--android:layout_marginLeft="2dp"-->
+                    <!--android:src="@drawable/top_sns_twitter"/>-->
+            <!--</LinearLayout>-->
+
+            <ImageView
+                android:id="@+id/imageViewIconGem"
+                android:layout_width="24dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="234dp"
+                android:layout_marginTop="26dp"
+                android:src="@drawable/icon_gem"/>
+            <app.view.OutlineTextView
+                android:id="@+id/outlineTextViewGem"
+                android:layout_width="59dp"
+                android:layout_height="@dimen/white_number_samll_height"
+                android:layout_marginLeft="258dp"
+                android:layout_marginTop="26dp"
+                android:textSize="@dimen/white_number_small_text"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="15dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="49dp"
+                android:src="@drawable/text_garbage_can"/>
+            <View
+                android:id="@+id/viewGaugeFrame"
+                android:layout_width="75dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="215dp"
+                android:layout_marginTop="64dp"
+                android:background="@drawable/gauge_frame"/>
+            <View
+                android:id="@+id/viewGauge"
+                android:layout_width="75dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="215dp"
+                android:layout_marginTop="64dp"
+                android:background="@drawable/gauge_drawable"/>
+            <ImageView
+                android:id="@+id/imageViewIconCan"
+                android:layout_width="32dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="49dp"
+                android:src="@drawable/level_list_can_icon"/>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="63dp"
+                android:src="@drawable/text_level"/>
+            <app.view.OutlineTextView
+                android:id="@+id/outlineTextViewLevel"
+                android:layout_width="40dp"
+                android:layout_height="@dimen/white_number_samll_height"
+                android:layout_marginLeft="43dp"
+                android:layout_marginTop="58dp"
+                android:textSize="@dimen/white_number_small_text"
+                android:textColor="@color/white"/>
+            <ImageView
+                android:id="@+id/imageViewLevelMax"
+                android:layout_width="35dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="43dp"
+                android:layout_marginTop="62dp"
+                android:src="@drawable/text_level_max"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/bonus_time_left_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone" >
+            
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="20dp"
+                android:src="@drawable/text_time_left"/>
+
+            <app.view.OutlineTextView
+                android:id="@+id/bonus_time_left_text"
+                android:layout_width="28dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="78dp"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:gravity="center" />
+
+        </RelativeLayout>
+
+        <!-- Footer -->
+        <FrameLayout
+            android:id="@+id/layoutFooter"
+            android:layout_width="@dimen/match_parent_width"
+            android:layout_height="105dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/room_footer" >
+
+            <Button
+                android:id="@+id/buttonItem"
+                android:layout_width="70dp"
+                android:layout_height="68dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/button_item"/>
+            <Button
+                android:id="@+id/buttonSynthesis"
+                android:layout_width="70dp"
+                android:layout_height="68dp"
+                android:layout_marginLeft="86dp"
+                android:background="@drawable/button_synthesis"/>
+            <Button
+                android:id="@+id/buttonPicturePoi"
+                android:layout_width="70dp"
+                android:layout_height="68dp"
+                android:layout_marginLeft="164dp"
+                android:background="@drawable/button_picture_poi"/>
+            <Button
+                android:id="@+id/buttonPictureBook"
+                android:layout_width="70dp"
+                android:layout_height="68dp"
+                android:layout_marginLeft="242dp"
+                android:background="@drawable/button_picture_book"/>
+        </FrameLayout>
+
+        <app.view.OutlineTextView
+            android:id="@+id/outlineTextView_saveData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_data_message"
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="110dp"
+            android:textSize="@dimen/white_number_item_dialog_text"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+
+        <FrameLayout
+            android:id="@+id/layoutAd"
+            android:layout_width="@dimen/ad_width"
+            android:layout_height="@dimen/ad_height"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@color/black"/>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageViewCapture"
+        android:layout_width="@dimen/match_parent_width"
+        android:layout_height="@dimen/match_parent_height"
+        android:visibility="gone"/>
+</RelativeLayout>

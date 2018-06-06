@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="match_parent_width">320dp</dimen>
+    <dimen name="match_parent_height">568dp</dimen>
+
+    <dimen name="ad_width">320dp</dimen>
+    <dimen name="ad_height">50dp</dimen>
+
+    <dimen name="dialog_width">250dp</dimen>
+    <dimen name="dialog_min_height">200dp</dimen>
+    <dimen name="dialog_marginTop">150dp</dimen>
+    <dimen name="dialog_padding">20dp</dimen>
+
+    <dimen name="page_margin">12dp</dimen>
+    <dimen name="tutorial_pager_height">490dp</dimen>
+    <dimen name="book_page_margin">4dp</dimen>
+    <dimen name="picturebook_page_margin">2dp</dimen>
+
+    <!-- Point -->
+    <dimen name="point_width">11dp</dimen>
+    <dimen name="point_comma_width">4dp</dimen>
+    <dimen name="point_height">20dp</dimen>
+
+    <!-- OutlineText用 -->
+    <dimen name="white_number_samll_width">13dp</dimen>
+    <dimen name="white_number_samll_height">24dp</dimen>
+    <dimen name="white_number_large_width">31dp</dimen>
+    <dimen name="white_number_large_height">42dp</dimen>
+    <dimen name="white_number_small_text">19.5dp</dimen>
+    <dimen name="white_number_large_text">34dp</dimen>
+    <dimen name="white_number_item_dialog_text">17dp</dimen>
+
+    <!-- Item用 -->
+    <dimen name="item_pager_width">261dp</dimen>
+    <dimen name="item_pager_height">311dp</dimen>
+    <dimen name="item_pager_margin_vertical">2dp</dimen>
+
+    <dimen name="picture_poi_message">13.3dp</dimen>
+
+</resources>

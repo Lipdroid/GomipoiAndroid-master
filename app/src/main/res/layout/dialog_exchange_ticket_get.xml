@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="@dimen/match_parent_width"
+        android:layout_height="@dimen/match_parent_height"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageViewLight"
+            android:layout_width="225dp"
+            android:layout_height="225dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="146.5dp"
+            android:src="@drawable/poi_light_white"/>
+
+        <!--ImageView
+            android:id="@+id/imageViewIconGem"
+            android:layout_width="50dp"
+            android:layout_height="43dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="237.5dp"
+            android:src="@drawable/poi_icon_gem"/-->
+        <ImageView
+            android:id="@+id/imageViewItemIcon"
+            android:layout_width="120dp"
+            android:layout_height="95dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="220dp"
+            android:src="@drawable/parts_premium_ticket_large" />
+
+        <ImageView
+            android:id="@+id/imageViewGetText"
+            android:layout_width="320dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="110dp"
+            android:src="@drawable/text_get"/>
+
+        <!--<ImageView
+            android:id="@+id/imageViewGetGemText"
+            android:layout_width="320dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="400dp"
+            android:src="@drawable/text_get_gem"/>-->
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageViewLight"
+            android:layout_marginTop="29dp"
+            android:src="@drawable/premium_ticket_message_get" />
+
+        <Button
+            android:id="@+id/buttonRight"
+            android:layout_width="95dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="460dp"
+            android:background="@drawable/button_back"/>
+
+    </RelativeLayout>
+</FrameLayout>
+    <!--
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="@dimen/match_parent_width"
+            android:layout_height="@dimen/match_parent_height"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imageViewGetText"
+                android:layout_width="320dp"
+                android:layout_height="80dp"
+                android:layout_above="@+id/imageViewLight"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/text_get" />
+
+            <ImageView
+                android:id="@+id/imageViewLight"
+                android:layout_width="225dp"
+                android:layout_height="225dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/poi_light_white"/>
+
+            <ImageView
+                android:id="@+id/imageViewIconGem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/parts_premium_ticket_large"/>
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewLight"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/premium_ticket_message_get" />
+
+            <Button
+                android:id="@+id/buttonRight"
+                android:layout_width="95dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imageView6"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_back"/>
+        </RelativeLayout>
+    </FrameLayout>-->

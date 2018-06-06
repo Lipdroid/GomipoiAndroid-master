@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/match_parent_width"
+    android:layout_height="@dimen/match_parent_height"
+    android:background="@drawable/login_background">
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/button_white"
+        android:text="@string/login_user"
+        android:textStyle="bold"
+        android:textColor="#3E1E01"
+        android:textSize="18dp"/>
+    <Button
+        android:id="@+id/buttonGuest"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonLogin"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_white"
+        android:text="@string/login_guest"
+        android:textStyle="bold"
+        android:textColor="#3E1E01"
+        android:textSize="18dp"/>
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="420dp"
+        android:src="@drawable/poiko_normal_1"/>
+</RelativeLayout>

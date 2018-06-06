@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+    <RelativeLayout
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingStart="8dp"
+        android:paddingRight="8dp"
+        android:paddingEnd="8dp"
+        android:background="@drawable/friend_cell">
+
+        <Button
+            android:id="@+id/imageViewInvite"
+            android:layout_width="85dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_friend_invite"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:textStyle="bold"  />
+
+        <TextView
+            android:id="@+id/textViewLifeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_alignTop="@+id/imageViewLife"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/imageViewLife"
+            android:layout_toStartOf="@+id/imageViewLife"
+            android:gravity="center"
+            android:text="@string/friend_total_point"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewLife"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textViewLifeTitle"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginRight="4dp"
+            android:layout_marginEnd="4dp" />
+
+        <ImageView
+            android:id="@+id/imageViewLife"
+            android:layout_width="24dp"
+            android:layout_height="23dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/icon_point" />
+
+        <TextView
+            android:id="@+id/textViewLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_alignTop="@+id/textViewLifeTitle"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/textViewLifeTitle"
+            android:layout_toStartOf="@+id/textViewLifeTitle"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_delete_friend"
+                android:layout_width="50dp"
+                android:layout_height="24dp"
+                android:background="@drawable/button_friend_delete"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"
+                android:layout_gravity="start"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

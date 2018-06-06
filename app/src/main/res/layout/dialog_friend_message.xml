@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="@dimen/match_parent_width"
+        android:layout_height="@dimen/match_parent_height"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="340dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="68dp"
+        android:paddingTop="@dimen/dialog_padding"
+        android:paddingBottom="@dimen/dialog_padding"
+        android:background="@drawable/dialog_background">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:text="@string/friend_message_title"
+            android:textSize="@dimen/sp20"
+            android:textColor="@color/dialog_text"/>
+        <TextView
+            android:id="@+id/textViewAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dialog_padding"
+            android:layout_marginRight="@dimen/dialog_padding"
+            android:layout_alignParentBottom="true"
+            android:text="@string/friend_message_alert"
+            android:textSize="@dimen/sp12"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/textViewEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dialog_padding"
+            android:layout_marginRight="@dimen/dialog_padding"
+            android:layout_below="@id/textViewTitle"
+            android:layout_above="@id/textViewAlert"
+            android:gravity="center"
+            android:text="@string/friend_message_list_empty"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/dialog_text"/>
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/textViewTitle"
+            android:layout_above="@id/textViewAlert"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp"
+            android:listSelector="@color/transparent"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonLeft"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="76dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/button_back"/>
+
+</FrameLayout>

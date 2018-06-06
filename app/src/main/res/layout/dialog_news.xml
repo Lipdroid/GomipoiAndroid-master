@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="@dimen/match_parent_width"
+        android:layout_height="@dimen/match_parent_height"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="102.5dp"
+            android:layout_marginBottom="100dp"
+            android:minHeight="110dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/news_background"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textViewNewsMessage"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="81dp"
+                android:layout_marginRight ="20dp"
+                android:textSize="@dimen/sp16"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/dialog_text" />
+            <Button
+                android:id="@+id/buttonResult"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_margin="30dp"
+                android:background="@drawable/button_lottery_result"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

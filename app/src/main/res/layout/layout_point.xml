@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right|center_vertical"
+    android:orientation="horizontal">
+    <app.wheel.lib.number.NumberWheelView
+        android:id="@+id/wheel10000000"
+        android:layout_width="@dimen/point_width"
+        android:layout_height="@dimen/point_height" />
+    <app.wheel.lib.number.NumberWheelView
+        android:id="@+id/wheel1000000"
+        android:layout_width="@dimen/point_width"
+        android:layout_height="@dimen/point_height" />
+    <ImageView
+        android:id="@+id/imageViewSeparator2"
+        android:layout_width="@dimen/point_comma_width"
+        android:layout_height="@dimen/point_height"
+        android:src="@drawable/point_number_comma" />
+    <app.wheel.lib.number.NumberWheelView
+        android:id="@+id/wheel100000"
+        android:layout_width="@dimen/point_width"
+        android:layout_height="@dimen/point_height" />
+    <app.wheel.lib.number.NumberWheelView
+        android:id="@+id/wheel10000"
+        android:layout_width="@dimen/point_width"
+        android:layout_height="@dimen/point_height" />
+    <app.wheel.lib.number.NumberWheelView
+        android:id="@+id/wheel1000"
+        android:layout_width="@dimen/point_width"
+        android:layout_height="@dimen/point_height" />
+    <ImageView
+        android:id="@+id/imageViewSeparator1"
+        android:layout_width="@dimen/point_comma_width"
+        android:layout_height="@dimen/point_height"
+        android:src="@drawable/point_number_comma" />
+    <app.wheel.lib.number.NumberWheelView
+        android:id="@+id/wheel100"
+        android:layout_width="@dimen/point_width"
+        android:layout_height="@dimen/point_height" />
+    <app.wheel.lib.number.NumberWheelView
+        android:id="@+id/wheel10"
+        android:layout_width="@dimen/point_width"
+        android:layout_height="@dimen/point_height" />
+    <app.wheel.lib.number.NumberWheelView
+        android:id="@+id/wheel1"
+        android:layout_width="@dimen/point_width"
+        android:layout_height="@dimen/point_height" />
+</LinearLayout>

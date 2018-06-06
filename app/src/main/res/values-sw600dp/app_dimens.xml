@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="white_number_small_text">29.25dp</dimen>
+    <dimen name="white_number_large_text">52dp</dimen>
+    <dimen name="white_number_item_dialog_text">25.5dp</dimen>
+
+    <dimen name="picture_poi_message">20dp</dimen>
+</resources>

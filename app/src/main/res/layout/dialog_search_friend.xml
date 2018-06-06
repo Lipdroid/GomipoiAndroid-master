@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="@dimen/match_parent_width"
+        android:layout_height="@dimen/match_parent_height"
+        android:layout_gravity="center">
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="48dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:background="@null"
+                android:src="@drawable/button_back_arrow" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:paddingRight="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:id="@+id/description_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp16"
+                android:textColor="@color/white"
+                android:text="@string/friend_add_description" />
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/description_text">
+
+                <EditText
+                    android:id="@+id/editTextCode"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.80"
+                    android:paddingLeft="9dp"
+                    android:paddingRight="9dp"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:textSize="@dimen/sp20"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:background="@drawable/textbox"/>
+
+                <Button
+                    android:id="@+id/buttonSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.20"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp16"
+                    android:textColor="@color/white"
+                    android:text="@string/confirm"
+                    android:background="@drawable/button_darkorange" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewNoName"
+                android:layout_width="264dp"
+                android:layout_height="53dp"
+                android:layout_below="@+id/layout"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_marginTop="70dp"
+                android:text="@string/friend_add_no_matching_user"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="264dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_marginTop="70dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp24"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="140dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/textViewName"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp17"
+                android:textColor="@color/white"
+                android:text="@string/friend_add_friend"
+                android:background="@drawable/button_blue"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>
+<!--
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/match_parent_width"
+    android:layout_height="@dimen/match_parent_height">
+
+    <View
+        android:layout_width="@dimen/match_parent_width"
+        android:layout_height="@dimen/match_parent_height"
+        android:layout_centerInParent="true"/>
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="42dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="24dp"
+        android:background="@null"
+        android:src="@drawable/button_back_arrow" />
+
+    <TextView
+        android:id="@+id/description_text"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="89dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/white"
+        android:text="@string/friend_add_description"/>
+
+    <EditText
+        android:id="@+id/editTextCode"
+        android:layout_width="215dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/description_text"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp"
+        android:gravity="center_vertical"
+        android:imeOptions="actionDone"
+        android:inputType="textEmailAddress"
+        android:textSize="@dimen/sp20"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:background="@drawable/textbox"/>
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/editTextCode"
+        android:layout_alignTop="@id/editTextCode"
+        android:layout_alignBottom="@id/editTextCode"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/white"
+        android:text="@string/confirm"
+        android:background="@drawable/button_darkorange" />
+
+    <TextView
+        android:id="@+id/textViewNoName"
+        android:layout_width="264dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/editTextCode"
+        android:layout_marginTop="73dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/friend_add_no_matching_user"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCode"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp24"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/textViewName"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp17"
+        android:textColor="@color/white"
+        android:text="@string/friend_add_friend"
+        android:background="@drawable/button_blue"/>
+
+</RelativeLayout>-->

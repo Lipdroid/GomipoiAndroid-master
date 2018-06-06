@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/match_parent_width"
+    android:layout_height="@dimen/match_parent_height"
+    android:background="@drawable/shop_background"
+    tools:context="app.fragment.FriendListRankFragment">
+
+    <!--ImageView
+        android:id="@+id/imageViewTitleBar"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:src="@drawable/login_title_bar"/>
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="42dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageViewTitle"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/button_back_arrow" />
+
+    <TextView
+        android:id="@+id/imageViewTitle"
+        android:layout_width="115dp"
+        android:layout_height="21dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/imageViewTitleBar"
+        android:layout_marginTop="22.5dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="@string/friend_list_rank_title"/-->
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/login_title_bar">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="48dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/button_back_arrow" />
+
+        <TextView
+            android:id="@+id/imageViewTitle"
+            android:layout_width="132dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@+id/back_button"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="@string/friend_list_rank_title"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:paddingLeft="16dp"
+        android:paddingStart="16dp"
+        android:paddingRight="16dp"
+        android:paddingEnd="16dp"
+        android:background="@drawable/drawable_tab_header_border">
+
+        <Button
+            android:id="@+id/button_current_ranking"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_tab_normal"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="現在のランキング" />
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/button_confirm_ranking"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_tab_normal"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="確定ランキング" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layoutAd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:paddingBottom="4dp"
+        android:background="@color/light_brown">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingStart="8dp"
+            android:paddingRight="8dp"
+            android:paddingEnd="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/friend_cell">
+
+
+            <TextView
+                android:id="@+id/tv_ranking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="あなたのランキング"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_ranking"
+                android:layout_toLeftOf="@+id/tv_ranking"
+                android:layout_toStartOf="@+id/tv_ranking"
+                android:id="@+id/space" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/space"
+                android:layout_toEndOf="@+id/tv_ranking"
+                android:layout_toRightOf="@+id/tv_ranking"
+                android:id="@+id/space2" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_below="@+id/space2"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/space3" />
+
+            <TextView
+                android:id="@+id/tv_self_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/space"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/space3"
+                android:layout_toStartOf="@+id/space3"
+                android:text="@string/friend_list_rank_rank"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_self_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/space2"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/space3"
+                android:layout_toRightOf="@+id/space3"
+                android:text="@string/friend_list_rank_points"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <!--LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_ranking"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tv_self_rank"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/friend_list_rank_rank"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tv_self_point"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/friend_list_rank_points"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+            </LinearLayout-->
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            android:textColor="@color/text_color" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_friendRankList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_date"
+            android:layout_marginTop="4dp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/layoutAd"
+        android:layout_width="@dimen/ad_width"
+        android:layout_height="@dimen/ad_height"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

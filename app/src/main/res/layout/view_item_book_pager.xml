@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/layoutItem1"
+        android:layout_width="123dp"
+        android:layout_height="108dp"
+        android:layout_marginLeft="3.75dp">
+
+        <ImageView
+            android:id="@+id/imageViewItem1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/book_paper" />
+
+        <ImageView
+            android:id="@+id/imageViewNew1"
+            android:layout_width="41dp"
+            android:layout_height="18dp"
+            android:layout_gravity="right"
+            android:src="@drawable/book_new"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layoutItem2"
+        android:layout_width="123dp"
+        android:layout_height="108dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3.75dp">
+
+        <ImageView
+            android:id="@+id/imageViewItem2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/book_paper" />
+
+        <ImageView
+            android:id="@+id/imageViewNew2"
+            android:layout_width="41dp"
+            android:layout_height="18dp"
+            android:layout_gravity="right"
+            android:src="@drawable/book_new"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layoutItem3"
+        android:layout_width="123dp"
+        android:layout_height="108dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3.75dp">
+
+        <ImageView
+            android:id="@+id/imageViewItem3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/book_paper" />
+
+        <ImageView
+            android:id="@+id/imageViewNew3"
+            android:layout_width="41dp"
+            android:layout_height="18dp"
+            android:layout_gravity="right"
+            android:src="@drawable/book_new"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layoutItem4"
+        android:layout_width="123dp"
+        android:layout_height="108dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="3.75dp">
+
+        <ImageView
+            android:id="@+id/imageViewItem4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/book_paper" />
+
+        <ImageView
+            android:id="@+id/imageViewNew4"
+            android:layout_width="41dp"
+            android:layout_height="18dp"
+            android:layout_gravity="right"
+            android:src="@drawable/book_new"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layoutItem5"
+        android:layout_width="123dp"
+        android:layout_height="108dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="3.75dp">
+
+        <ImageView
+            android:id="@+id/imageViewItem5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/book_paper" />
+
+        <ImageView
+            android:id="@+id/imageViewNew5"
+            android:layout_width="41dp"
+            android:layout_height="18dp"
+            android:layout_gravity="right"
+            android:src="@drawable/book_new"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layoutItem6"
+        android:layout_width="123dp"
+        android:layout_height="108dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3.75dp">
+
+        <ImageView
+            android:id="@+id/imageViewItem6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/book_paper" />
+
+        <ImageView
+            android:id="@+id/imageViewNew6"
+            android:layout_width="41dp"
+            android:layout_height="18dp"
+            android:layout_gravity="right"
+            android:src="@drawable/book_new"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</RelativeLayout>

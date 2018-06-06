@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/match_parent_width"
+    android:layout_height="@dimen/match_parent_height"
+    android:background="@color/white">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="@dimen/match_parent_width"
+        android:layout_height="@dimen/tutorial_pager_height"
+        android:layout_centerHorizontal="true" />
+
+    <!-- フッター -->
+    <LinearLayout
+        android:id="@+id/layoutPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/viewPager"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imageViewPage1"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="@dimen/page_margin"
+            android:src="@drawable/selector_item_page"/>
+        <ImageView
+            android:id="@+id/imageViewPage2"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="@dimen/page_margin"
+            android:src="@drawable/selector_item_page"/>
+        <ImageView
+            android:id="@+id/imageViewPage3"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="@dimen/page_margin"
+            android:src="@drawable/selector_item_page"/>
+        <ImageView
+            android:id="@+id/imageViewPage4"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="@dimen/page_margin"
+            android:src="@drawable/selector_item_page"/>
+        <ImageView
+            android:id="@+id/imageViewPage5"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="@dimen/page_margin"
+            android:src="@drawable/selector_item_page"/>
+        <ImageView
+            android:id="@+id/imageViewPage6"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/selector_item_page"/>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/buttonArrowLeft"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_toLeftOf="@id/layoutPage"
+        android:layout_alignTop="@id/layoutPage"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="-8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:src="@drawable/item_arrow_left"
+        android:background="@null"/>
+    <ImageButton
+        android:id="@+id/buttonArrowRight"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_toRightOf="@id/layoutPage"
+        android:layout_alignTop="@id/layoutPage"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="-8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:src="@drawable/item_arrow_right"
+        android:background="@null"/>
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/match_parent_width"
+    android:layout_height="@dimen/match_parent_height"
+    android:background="@drawable/shop_background">
+
+    <!--ImageView
+        android:id="@+id/imageViewTitleBar"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:src="@drawable/login_title_bar"/>
+    <ImageView
+        android:id="@+id/imageViewTitle"
+        android:layout_width="115dp"
+        android:layout_height="21dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/imageViewTitleBar"
+        android:layout_marginTop="22.5dp"
+        android:src="@drawable/title_friend"/-->
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/login_title_bar">
+
+        <!--ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="48dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/button_back_arrow" /-->
+
+        <ImageView
+            android:id="@+id/imageViewTitle"
+            android:layout_width="115dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="24dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="center"
+            android:src="@drawable/title_friend" />
+
+    </RelativeLayout>
+
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/back_button"-->
+        <!--android:layout_width="42dp"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:background="@null"-->
+        <!--android:src="@drawable/button_back_arrow" />-->
+
+
+    <FrameLayout
+        android:id="@+id/layoutAd"
+        android:layout_width="@dimen/ad_width"
+        android:layout_height="@dimen/ad_height"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+    <TextView
+        android:id="@+id/textViewCodeIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/friend_list_code_title"
+        android:textSize="@dimen/sp14"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"/>
+    <TextView
+        android:id="@+id/textViewCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="27dp"
+        android:layout_alignTop="@id/textViewCodeIndex"
+        android:layout_toRightOf="@+id/textViewCodeIndex"
+        android:gravity="right"
+        android:textSize="@dimen/sp14"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"/>
+
+    <FrameLayout
+        android:id="@+id/container_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textViewCodeIndex">
+
+        <ImageView
+            android:id="@+id/imageView_qr"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@android:color/white"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container_qr"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="@dimen/sp14"
+        android:textStyle="bold"
+        android:text="@string/qr_code_description"
+        android:gravity="center"
+        android:textColor="@color/text_color"/>
+</RelativeLayout>

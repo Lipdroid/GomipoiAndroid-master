@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.topmission.gomipoi"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ダウンロード可能な端末を OpenGL ES 2.0 を使用可能な端末に制限します。 -->
+    <uses-feature android:glEsVersion="0x00020000"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:name="app.application.GBApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="app.activity.TutorialActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="app.activity.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="app.activity.TopActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="app.activity.ExchangeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="app.activity.GameActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="app.activity.HelpActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="app.activity.NewsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="app.activity.RankingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="app.activity.SettingsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="app.activity.ShopActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="app.activity.FriendActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity
+            android:name="app.activity.InfoActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="app.activity.QRReadActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            />
+
+        <activity
+            android:name="app.activity.ShowQRActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            />
+
+        <service
+            android:name="app.service.SaveDataService"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <!-- google-service用 -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <!-- Admob View -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent"/>
+        <!-- FacebookSDK -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <service
+            android:name="app.notification.InstanceIDListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="app.notification.GBMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+    </application>
+</manifest>

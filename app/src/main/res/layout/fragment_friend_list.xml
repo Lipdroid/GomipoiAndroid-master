@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/match_parent_width"
+    android:layout_height="@dimen/match_parent_height"
+    android:background="@drawable/shop_background"
+    tools:context="app.fragment.FriendListFragment">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/login_title_bar">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="48dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/button_back_arrow" />
+
+        <ImageView
+            android:id="@+id/imageViewTitle"
+            android:layout_width="115dp"
+            android:layout_height="35dp"
+            android:layout_alignTop="@+id/back_button"
+            android:layout_centerHorizontal="true"
+            android:scaleType="center"
+            android:src="@drawable/title_friend" />
+
+        <Button
+            android:id="@+id/friendRank_button"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/back_button"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_ranking"  />
+
+        <!--<Button
+            android:id="@+id/friendRank_button"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
+            android:layout_alignBottom="@+id/back_button"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/top_button_ranking" />-->
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/layoutAd"
+        android:layout_width="@dimen/ad_width"
+        android:layout_height="@dimen/ad_height"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+    <!--Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewCodeIndex"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space4" />
+
+    <TextView
+        android:id="@+id/textViewCodeIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/header"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/space4"
+        android:layout_toStartOf="@+id/space4"
+        android:text="@string/friend_list_code_title"
+        android:gravity="center"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/textViewCodeIndex"
+        android:layout_toEndOf="@+id/space4"
+        android:layout_toRightOf="@+id/space4"
+        android:gravity="center"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/readQR_button"
+        android:layout_width="85dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/sp12"
+        android:background="@drawable/button_qr_scan"
+        android:layout_below="@+id/textViewCodeIndex"/>
+
+    <Button
+        android:id="@+id/showQR_button"
+        android:layout_width="85dp"
+        android:layout_height="32dp"
+        android:textSize="@dimen/sp12"
+        android:background="@drawable/button_qr_display"
+        android:layout_alignBottom="@+id/readQR_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp"
+        /-->
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textViewCodeIndex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/friend_list_code_title"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/readQR_button"
+                android:layout_width="85dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_qr_scan" />
+
+            <!--<Button
+                android:id="@+id/readQR_button"
+                android:layout_width="85dp"
+                android:layout_height="36dp"
+                android:text="QRコード\nリーダー"
+                android:layout_marginTop="8dp"
+                android:textSize="@dimen/sp12"
+                android:background="@drawable/button_orange_small" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textViewCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/showQR_button"
+                android:layout_width="85dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_qr_display" />
+            <!--<Button
+                android:id="@+id/showQR_button"
+                android:layout_width="85dp"
+                android:layout_height="36dp"
+                android:text="QRコード\n表示"
+                android:layout_marginTop="8dp"
+                android:textSize="@dimen/sp12"
+                android:background="@drawable/button_orange_small" />-->
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonMessage"
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="27dp"
+        android:background="@drawable/button_friend_message"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="27dp" />
+
+    <TextView
+        android:id="@+id/textViewBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignTop="@id/buttonMessage"
+        android:layout_alignRight="@id/buttonMessage"
+        android:layout_below="@id/buttonMessage"
+        android:layout_marginTop="-5dp"
+        android:layout_marginRight="-10dp"
+        android:gravity="center"
+        android:textSize="@dimen/sp12"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/message_badge"
+        android:translationZ="2dp"
+        android:layout_alignEnd="@id/buttonMessage"
+        android:layout_marginEnd="-10dp" />
+
+    <Button
+        android:id="@+id/buttonInvite"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@id/buttonMessage"
+        android:layout_alignTop="@id/buttonMessage"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/button_friend_add"
+        android:layout_toStartOf="@id/buttonMessage"
+        android:layout_marginEnd="8dp" />
+
+    <LinearLayout
+        android:id="@+id/layoutSns"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/buttonInvite"
+        android:layout_alignBottom="@id/buttonMessage"
+        android:layout_marginRight="12dp"
+        android:orientation="horizontal"
+        android:layout_toStartOf="@id/buttonInvite"
+        android:layout_marginEnd="12dp">
+        <ImageView
+            android:id="@+id/imageViewSnsLine"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/top_sns_line"/>
+        <ImageView
+            android:id="@+id/imageViewSnsFacebook"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/top_sns_facebook"/>
+        <ImageView
+            android:id="@+id/imageViewSnsTwitter"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/top_sns_twitter"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewFriendCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/buttonMessage"
+        android:layout_marginLeft="27dp"
+        android:gravity="center"
+        android:textSize="@dimen/sp13"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:translationZ="2dp"
+        android:layout_marginStart="27dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layoutAd"
+        android:layout_below="@id/textViewFriendCount"
+        android:layout_marginTop="8dp"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@color/transparent"/>
+</RelativeLayout>

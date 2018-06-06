@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="265dp"
+    android:layout_height="358dp" >
+
+    <!-- タイトル -->
+    <ImageView
+        android:id="@+id/imageViewTitle"
+        android:layout_width="170dp"
+        android:layout_height="18dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null" />
+
+    <!-- Cell1 -->
+    <ImageView
+        android:id="@+id/imageViewCell1"
+        android:layout_width="208dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageViewTitle"
+        android:layout_marginTop="12.8dp"
+        android:src="@drawable/recipe_frame"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/imageViewMaterial11"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignLeft="@id/imageViewCell1"
+        android:layout_alignTop="@id/imageViewCell1"
+        android:contentDescription="@null" />
+    <ImageView
+        android:id="@+id/imageViewMaterial12"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignLeft="@id/imageViewCell1"
+        android:layout_alignTop="@id/imageViewCell1"
+        android:layout_marginLeft="72dp"
+        android:contentDescription="@null" />
+    <ImageView
+        android:id="@+id/imageViewMaterial13"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignLeft="@id/imageViewCell1"
+        android:layout_alignTop="@id/imageViewCell1"
+        android:layout_marginLeft="144dp"
+        android:contentDescription="@null" />
+
+    <!-- Cell2 -->
+    <ImageView
+        android:id="@+id/imageViewCell2"
+        android:layout_width="208dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageViewCell1"
+        android:layout_marginTop="12.8dp"
+        android:src="@drawable/recipe_frame"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/imageViewMaterial21"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignLeft="@id/imageViewCell2"
+        android:layout_alignTop="@id/imageViewCell2"
+        android:contentDescription="@null" />
+    <ImageView
+        android:id="@+id/imageViewMaterial22"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignLeft="@id/imageViewCell2"
+        android:layout_alignTop="@id/imageViewCell2"
+        android:layout_marginLeft="72dp"
+        android:contentDescription="@null" />
+    <ImageView
+        android:id="@+id/imageViewMaterial23"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignLeft="@id/imageViewCell2"
+        android:layout_alignTop="@id/imageViewCell2"
+        android:layout_marginLeft="144dp"
+        android:contentDescription="@null" />
+
+    <!-- Cell3 -->
+    <ImageView
+        android:id="@+id/imageViewCell3"
+        android:layout_width="208dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageViewCell2"
+        android:layout_marginTop="12.8dp"
+        android:src="@drawable/recipe_frame"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/imageViewMaterial31"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignLeft="@id/imageViewCell3"
+        android:layout_alignTop="@id/imageViewCell3"
+        android:contentDescription="@null" />
+    <ImageView
+        android:id="@+id/imageViewMaterial32"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignLeft="@id/imageViewCell3"
+        android:layout_alignTop="@id/imageViewCell3"
+        android:layout_marginLeft="72dp"
+        android:contentDescription="@null" />
+    <ImageView
+        android:id="@+id/imageViewMaterial33"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignLeft="@id/imageViewCell3"
+        android:layout_alignTop="@id/imageViewCell3"
+        android:layout_marginLeft="144dp"
+        android:contentDescription="@null" />
+
+    <!-- Cell4 -->
+    <ImageView
+        android:id="@+id/imageViewCell4"
+        android:layout_width="208dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageViewCell3"
+        android:layout_marginTop="12.8dp"
+        android:src="@drawable/recipe_frame"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/imageViewMaterial41"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignLeft="@id/imageViewCell4"
+        android:layout_alignTop="@id/imageViewCell4"
+        android:contentDescription="@null" />
+    <ImageView
+        android:id="@+id/imageViewMaterial42"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignLeft="@id/imageViewCell4"
+        android:layout_alignTop="@id/imageViewCell4"
+        android:layout_marginLeft="72dp"
+        android:contentDescription="@null" />
+    <ImageView
+        android:id="@+id/imageViewMaterial43"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignLeft="@id/imageViewCell4"
+        android:layout_alignTop="@id/imageViewCell4"
+        android:layout_marginLeft="144dp"
+        android:contentDescription="@null" />
+
+</RelativeLayout>
